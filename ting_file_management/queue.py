@@ -1,3 +1,5 @@
+# from collections import deque ex self.deque([])?
+
 class Queue:
     def __init__(self):
         self.queue_value = []
