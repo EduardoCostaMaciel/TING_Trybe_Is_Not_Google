@@ -15,7 +15,7 @@ def process(path_file, instance):
     }
 
     instance.enqueue(result)
-    return sys.stdout.write(str(result))
+    sys.stdout.write(str(result))
 
 
 def remove(instance):
@@ -23,7 +23,7 @@ def remove(instance):
         return sys.stdout.write("Não há elementos\n")
 
     value_removed = instance.dequeue()["nome_do_arquivo"]
-    return sys.stdout.write(f"Arquivo {value_removed} removido com sucesso\n")
+    sys.stdout.write(f"Arquivo {value_removed} removido com sucesso\n")
 
 
 def file_metadata(instance, position):
